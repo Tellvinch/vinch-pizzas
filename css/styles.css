@@ -27,6 +27,39 @@
 }
 
 
+input[type='checkbox'] {
+  width:30px;
+  height:30px;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
+}
+input[type='checkbox']:checked {
+  background: #abd;
+}
+
+input[type='text'] {
+  width:250px;
+  height:30px;
+  background:white;
+  border-radius:0px;
+  border:0px  #555;
+}
+input[type='text']:checked {
+  background: #abd;
+}
+
+input[type='radio'] {
+  width:30px;
+  height:30px;
+  background:white;
+  border-radius:0px;
+  border:0px  #555;
+}
+input[type='radio']:checked {
+  background: #abd;
+}
+
 
 .container h5 {
   text-align: center;

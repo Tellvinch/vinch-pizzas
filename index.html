@@ -25,7 +25,7 @@
           <div class="row">
             <div class="col-md-6" >
              <div class="intro">
-                 <h5>WELCOME TO VINCH PIZZAS </h5>
+                 <h5><strong>WELCOME TO VINCH PIZZAS</strong></h5>
              </div>
             </div>
          </div>
@@ -39,28 +39,29 @@
           <br>
           <br>
           <div class="size col-md-6">
-              <h5>Choose your pizza size </h5>
-              <form class="form-control">
+              <h5><strong>Choose your pizza size</strong> </h5>
+              <form class="form-group" style="margin-left: 200px;">
                   <select>
-                      <option>Small</option>
-                      <option>Medium</option>
-                      <option>Large</option>
-                      <option>Extra large</option>
+                      <option value=""> select size</option>
+                      <option value="small"> Small</option>
+                      <option value="medium">Medium</option>
+                      <option value="large">Large</option>
+                      <option value="extralarge">Extra large</option>
                   </select>
               </form>
           </div>
           <div class="crust col-md-6">
-            <h5>Choose the crust</h5>
-            <form class="form-control">
+            <h5><strong>Choose the crust</strong></h5>
+            <form class="form-group" style="margin-left: 200px;">
                 <select>
-                    <option>Crispy</option>
-                    <option>Stuffed</option>
-                    <option>Gluten-free</option>
+                    <option value="crispy">Crispy</option>
+                    <option value="stuffed">Stuffed</option>
+                    <option value="gluten">Gluten-free</option>
                 </select>
             </form>
           </div>
-          <div class="crust col-md-6">
-            <h5>Select toppings</h5>
+          <div class="toppings col-md-6">
+            <h5><strong>Select toppings</strong></h5>
             <form>
                 <input type="checkbox" name="pepperroni" value="pepperoni" id="pepperoni" >
                 <label for="pepperoni">Pepperoni</label>
@@ -78,6 +79,25 @@
                 <label for="bacon">Bacon</label>
             </form>
           </div>
+          <div class="number col-md-6">
+            <h5><strong>How many pizzas do you want to order?</strong></h5>
+            <form class="form-group" style="margin-left: 150px;">
+                <input type="text" id="quantity" name="quantity" min="1" max="1000" placeholder="Enter number here">
+            </form>
+          </div>
+          <br>
+          <button type="button" class="btn btn-warning" style="margin-left: 230px;"><strong>PLACE ORDER HERE</strong> </button>
+          <div class="deliver form-group col-md-6">
+              <h5><strong>Would you like your order delivered to you?</strong></h5>
+            <form class="form-group">
+                <input type="radio" id="yes" name="yes" value="yes">
+                <label for="yes">Yes please</label><br>
+                <input type="radio" id="no" name="no" value="no">
+                <label for="no">Not today</label><br> 
+              </form>
+          </div>
+          <button type="button" class="btn btn-info"><strong>TOTAL COST</strong></button>
+
         </div>
     </body>
 </html>
