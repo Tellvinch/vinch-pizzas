@@ -74,46 +74,51 @@
           <div class="pic"></div>
         </div>
       </div>
-      <div class="crust col-md-6">
-        <h5><strong>Choose the crust</strong></h5>
-        <form class="form-group" style="margin-left: 200px;">
-          <select>
-            <option value="crispy">Crispy</option>
-            <option value="stuffed">Stuffed</option>
-            <option value="gluten">Gluten-free</option>
-          </select>
-        </form>
+      <div class="row">
+        <div class="crust col-md-9">
+          <h5><strong>Choose the crust</strong></h5>
+          <form class="form-group" style="margin-left: 200px;">
+            <select>
+              <option value="crispy">Crispy</option>
+              <option value="stuffed">Stuffed</option>
+              <option value="gluten">Gluten-free</option>
+            </select>
+          </form>
+        </div>
       </div>
-      <div class="toppings col-md-6">
-        <h5><strong>Select toppings</strong></h5>
-        <form>
-          <input
-            type="checkbox"
-            name="pepperroni"
-            value="pepperoni"
-            id="pepperoni"
-          />
-          <label for="pepperoni">Pepperoni</label>
-          <br />
-          <input
-            type="checkbox"
-            name="mushrooms"
-            value="mushrooms"
-            id="mushrooms"
-          />
-          <label for="mushrooms">Mushrooms</label>
-          <br />
-          <input type="checkbox" name="onions" value="onions" id="onions" />
-          <label for="onions">Onions</label>
-          <br />
-          <input type="checkbox" name="sausage" value="sausage" id="sausage" />
-          <label for="sausage">Sausage</label>
-          <br />
-          <input type="checkbox" name="bacon" value="bacon" id="bacon" />
-          <label for="bacon">Bacon</label>
-        </form>
+      <div class="row">
+        <div class="toppings col-md-9">
+            <h5><strong>Select toppings</strong></h5>
+            <form>
+              <input
+                type="checkbox"
+                name="pepperroni"
+                value="pepperoni"
+                id="pepperoni"
+              />
+              <label for="pepperoni">Pepperoni</label>
+              <br />
+              <input
+                type="checkbox"
+                name="mushrooms"
+                value="mushrooms"
+                id="mushrooms"
+              />
+              <label for="mushrooms">Mushrooms</label>
+              <br />
+              <input type="checkbox" name="onions" value="onions" id="onions" />
+              <label for="onions">Onions</label>
+              <br />
+              <input type="checkbox" name="sausage" value="sausage" id="sausage" />
+              <label for="sausage">Sausage</label>
+              <br />
+              <input type="checkbox" name="bacon" value="bacon" id="bacon" />
+              <label for="bacon">Bacon</label>
+            </form>
+          </div>
       </div>
-      <div class="number col-md-6">
+      <div class="row">
+          <div class="number col-md-9">
         <h5><strong>How many pizzas do you want to order?</strong></h5>
         <form class="form-group" style="margin-left: 130px;">
           <input
@@ -126,20 +131,24 @@
           />
         </form>
       </div>
+      </div>
       <br />
-      <button type="button" class="btn btn-warning" style="margin-left: 230px;">
+      <button type="button" class="btn btn-warning" style="margin-left: 300px;">
         <strong>PLACE ORDER HERE</strong>
       </button>
-      <div class="deliver form-group col-md-6">
-        <h5><strong>Would you like your order delivered to you?</strong></h5>
-        <form class="form-group">
-          <input type="radio" id="yes" name="yes" value="yes" />
-          <label for="yes">Yes please</label><br />
-          <input type="radio" id="no" name="no" value="no" />
-          <label for="no">Not today</label><br />
-        </form>
+      <br>
+      <div class="row">
+        <div class="deliver form-group col-md-9">
+            <h5><strong>Would you like your order delivered to you?</strong></h5>
+            <form class="form-group">
+              <input type="radio" id="yes" name="yes" value="yes" />
+              <label for="yes">Yes please</label><br />
+              <input type="radio" id="no" name="no" value="no" />
+              <label for="no">Not today</label><br />
+            </form>
+          </div>
       </div>
-      <button type="button" class="btn btn-info" style="margin-left: 230px;">
+      <button type="button" class="btn btn-info" style="margin-left: 330px;">
         <strong>TOTAL COST</strong>
       </button>
       <br />
