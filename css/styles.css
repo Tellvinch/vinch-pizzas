@@ -1,5 +1,5 @@
 .container{
-  background-image: url("../img/bg.jpeg");
+  background-image: url("../img/BG.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: aliceblue;
@@ -23,7 +23,7 @@
 }
 
 .navbar ul li a{
-  color: darkblue;
+  color: lightcyan;
 }
 
 
