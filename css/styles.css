@@ -1,4 +1,4 @@
-.container{
+.container {
   background-image: url("../img/BG.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,21 +7,21 @@
 }
 
 .container h5 {
-  text-align: center; 
-  color:lightblue;
+  text-align: center;
+  color: lightblue;
   font-size: 40px;
   font-family: sans-serif;
 }
 
-.logo{
-  padding-top:15px; 
+.logo {
+  padding-top: 15px;
 }
 
-.intro h5{
+.intro h5 {
   padding-left: 0px;
 }
 
-.navbar{
+.navbar {
   float: right;
   display: inline;
   padding-left: 20px;
@@ -34,42 +34,39 @@
   font-size: 30px;
 }
 
-.navbar ul li a{
+.navbar ul li a {
   color: lightcyan;
 }
 
-
-input[type='checkbox'] {
-  width:30px;
-  height:30px;
-  background:white;
-  border-radius:5px;
-  border:2px solid #555;
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #555;
 }
-input[type='checkbox']:checked {
+input[type="checkbox"]:checked {
   background: #abd;
 }
 
-input[type='text'] {
-  width:250px;
-  height:30px;
-  background:white;
-  border-radius:0px;
-  border:0px  #555;
+input[type="text"] {
+  width: 250px;
+  height: 30px;
+  background: white;
+  border-radius: 0px;
+  border: 0px #555;
 }
-input[type='text']:checked {
+input[type="text"]:checked {
   background: #abd;
 }
 
-input[type='radio'] {
-  width:30px;
-  height:30px;
-  background:white;
-  border-radius:0px;
-  border:0px  #555;
+input[type="radio"] {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 0px;
+  border: 0px #555;
 }
-input[type='radio']:checked {
+input[type="radio"]:checked {
   background: #abd;
 }
-
-
