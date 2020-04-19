@@ -19,7 +19,10 @@ $(document).ready(function () {
     var quantity = $("input#quantity").val();
   });
   $("#submit").click(function (event) {
+        alert("Your order has been placed")
         $(".whatorder").toggle();
+    
+
     
   });
   var deliverOrder = $("form#deliver").change(function () {
