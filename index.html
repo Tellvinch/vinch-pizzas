@@ -63,8 +63,9 @@
       <div class="row">
         <div class="col-md-9">
           <h5><strong>Choose your pizza size</strong></h5>
+    
           <form class="form-group" style="margin-left: 330px;">
-            <select class="size">
+            <select id="size">
               <option value=""> select size</option>
               <option value="small"> Small</option>
               <option value="medium">Medium</option>
@@ -81,9 +82,9 @@
         <div class="col-md-9">
           <h5><strong>Choose the crust</strong></h5>
           <form class="form-group" style="margin-left: 330px;">
-            <select class="crust">
+            <select id="crust">
               <option value="crust">Select crust</option>
-              <option value="crispy">Crispy</option>
+              <option value="Crispy" >Crispy</option>
               <option value="stuffed">Stuffed</option>
               <option name="gluten">Gluten-free</option>
             </select>
@@ -93,7 +94,7 @@
       <div class="row">
         <div class="toppings col-md-9">
           <h5><strong>Select toppings</strong></h5>
-          <form style="margin-left: 330px;" class="toppings">
+          <form style="margin-left: 330px;" id="toppings">
             <input
               type="checkbox"
               name="pepperroni"
@@ -151,17 +152,7 @@
       >
         <strong>PLACE ORDER HERE</strong>
       </button>
-      <div class="whatorder" style=" float: right;padding-right: 39px;">
-        <h6><strong>THIS IS YOUR ORDER</strong></h5>
-        <ol style="font-size: 30px; background-color: lightcyan; color: black;">
-          <li>Size:<span id="pizzasize"></span></li>
-          <li>Crust:<span id="pizzacrust"></span></li>
-          <li>Topping:<span id="pizzatopping"></span></li>
-          <li>Number:<span id=" nnumber"></span></li>
-          <li>TOTAL:<span></span></li>
-
-        </ol>
-      </div>
+    
       <br />
       <div class="row">
         <div class="deliver form-group col-md-9">
@@ -183,7 +174,7 @@
       >
         <strong>TOTAL COST</strong>
       </button>
-
+    
       <br />
       <br />
     </div>

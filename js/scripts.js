@@ -4,37 +4,41 @@ $(document).ready(function () {
     this.crust = crust;
     this.toppings = toppings;
   }
-  $("select.size").change(function () {
-    var size = $("option:selected").val();
+  pizza.prototype.order = function () {
+    return this.size + this.crust + this.toppings;
+  };
+  $("button#submit").click(function (event) {
+    var size = $("select#size option:checked").val();
+    var crust = $("select#crust option:selected").val();
+    var topping = $("form#toppings input:checked").val();
+    var number = $("input#quantity").val();
+    var customersOrder =
+      "You have ordered " +
+      number +
+      " " +
+      size +
+      " sized " +
+      crust +
+      " pizza(s) with " +
+      topping +
+      " as topping";
+
+    Swal.fire(customersOrder);
+    Swal.fire(deliverOrder);
   });
-  var selectedCrust = $("select.crust").change(function () {
-    var selected = $("option:selected").val();
-    Swal.fire("Thanks for choosing your crust.The cost would be ksh 100/=");
+  $("button#cost").click(function (event) {
+    var total =
+      "Hello Customer! this is your total cost " +
+      $("input#quantity").val() * 1000;
+    Swal.fire(total);
   });
-  var checkedTopping = $("form.toppings").change(function () {
-    var checked = $("input:checked").val();
-    Swal.fire("Thanks for choosing your topping.The cost would be ksh 100/= ");
-  });
-  var number = $("input#quantity").change(function () {
-    var quantity = $("input#quantity").val();
-  });
-  $("#submit").click(function (event) {
-    Swal.fire("Your order has been placed");
-    $(".whatorder").toggle();
-  });
-  var deliverOrder = $("form#deliver").change(function () {
-    $("input:checked").val();
+  $("form#deliver ").change(function () {
+    var deliver = $("input:checked").val();
     if ($("input:checked").val() === "yes") {
-      prompt("Enter the adress you want your order to be delivered to");
-      Swal.fire("Your delivering charges will be Sh 55/=");
-      confirm("Do you still want the delivery to be made?");
+      prompt("Enter your adress");
+      Swal.fire("The delivery cost to your location is KSH 55/=");
     }
   });
-
-  var cost = $("#cost").click(function (event) {
-    Swal.fire(
-      "Hello! Customer this is your total cost " +
-        $("input#quantity").val() * 1000
-    );
-  });
 });
+
+
