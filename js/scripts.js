@@ -22,13 +22,14 @@ $(document).ready(function() {
             
         })
         $("#submit").click(function(event){
-            alert("Done! your order has been placed");//just to see if its working
+            alert("Done! your order has been placed.Youve ordered 1 large crispy pizza with mushrooms for toppings");//just to see if its working
         })
         var deliverOrder=$("form#deliver").change(function(){
             $("input:checked").val();
             if($("input:checked").val()=== "yes"){
                 prompt("Enter the adress you want your order to be delivered to");
-                alert("Your deliver cost will be -----")
+                alert("Your delivering charges will be ksh 55/=")
+                confirm("Do you still want the delivery to be made?")
             
             }
         })    
