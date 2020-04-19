@@ -33,7 +33,7 @@ $(document).ready(function () {
 
   var cost = $("#cost").click(function (event) {
     Swal.fire(
-      "Hey! Customer this is your total cost " +
+      "Hello! Customer this is your total cost " +
         $("input#quantity").val() * 1000
     );
   });
