@@ -19,9 +19,8 @@ $(document).ready(function () {
     var quantity = $("input#quantity").val();
   });
   $("#submit").click(function (event) {
-    alert(
-      "Done! your order has been placed.You've ordered 1 large crispy pizza with mushrooms for toppings "
-    ); //just to see if its working
+        $(".whatorder").toggle();
+    
   });
   var deliverOrder = $("form#deliver").change(function () {
     $("input:checked").val();
