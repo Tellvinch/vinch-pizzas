@@ -7,22 +7,22 @@ $(document).ready(function() {
         } 
         var selectedSize=$("select.size").change(function(){
            var size=$("option:selected").val();
-           alert("Hello customer you have selected "+ size +" size");
+           
         })
         var selectedCrust=$("select.crust").change(function(){
             var selected=$("option:selected").val();
-            alert("Thanks for choosing your crust");
+            alert("Thanks for choosing your crust.The cost would be ksh 100/=");
         })
         var checkedTopping=$("form.toppings").change(function(){
              var checked=$("input:checked").val();
-            alert(checked);
-        })
+             alert("Thanks for choosing your topping.The cost would be ksh 100/=");
+            })
         var number=$("input#quantity").change(function(){
             var quantity= $("input#quantity").val();
-            alert(quantity);
+            
         })
         $("#submit").click(function(event){
-            alert("You have ordered a " +  + " sized Pizza");//just to see if its working
+            alert("Done! your order has been placed");//just to see if its working
         })
         var deliverOrder=$("form#deliver").change(function(){
             $("input:checked").val();
@@ -34,7 +34,7 @@ $(document).ready(function() {
         })    
        
         var cost=$("#cost").click(function(event){
-            alert("Hi Customer this is your total cost "+ $("input#quantity").val()*1000);
+            alert("Hey! Customer this is your total cost "+ $("input#quantity").val()*1000);
         })
           
         
