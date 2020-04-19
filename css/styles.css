@@ -6,9 +6,21 @@
   font-size: 30px;
 }
 
+.container h5 {
+  text-align: center; 
+  color:lightblue;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
 .logo{
   padding-top:15px; 
 }
+
+.intro h5{
+  padding-left: 0px;
+}
+
 .navbar{
   float: right;
   display: inline;
@@ -61,9 +73,3 @@ input[type='radio']:checked {
 }
 
 
-.container h5 {
-  text-align: center;
-  color:lightblue;
-  font-size: 40px;
-  font-family: sans-serif;
-}
