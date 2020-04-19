@@ -1,5 +1,10 @@
 
 $(document).ready(function() {
+       function pizza(size, crust, toppings) {
+           this.size = size;
+           this.crust = crust;
+           this.toppings = toppings;
+        } 
         var selectedSize=$("select.size").change(function(){
            $("option:selected").val();
            alert("Hello customer you have selected "+ selectedSize +" size");
@@ -18,9 +23,11 @@ $(document).ready(function() {
         })
         var checkedTopping=$("form#deliver").change(function(){
             $("input:checked").val();
-            alert(checkedTopping);
-            if($("input:checked").val() && $("input#email").val()){
-                alert("Awesome! "+  name +" we have gotten your message thanks for the feedback.");
+            if($("input:checked").val()=== "yes"){
+                prompt("Enter the adress you want your order to be delivered to");
+                alert("Your deliver cost will be -----")
+            
+            }
         })    
         var one =$("#submit").click(function(event){
             alert("DONE YOUR ORDER HAS BEEN PLACED");
@@ -28,13 +35,7 @@ $(document).ready(function() {
         var cost=$("#cost").click(function(event){
             alert("Hi Customer this is your total cost 1769354969");
         })
-        function pizza(size, crust, toppings) {
-            this.size = size;
-            this.crust = crust;
-            this.toppings = toppings;
-          } 
-        
-        var customersOrder = new pizza (selectedSize,selectedCrust,toppings)
+         var customersOrder = new pizza (selectedSize,selectedCrust,toppings)
         alert(customersOrder);
         
        
