@@ -9,33 +9,30 @@ $(document).ready(function () {
   });
   var selectedCrust = $("select.crust").change(function () {
     var selected = $("option:selected").val();
-    alert("Thanks for choosing your crust.The cost would be ksh 100/=");
+    Swal.fire("Thanks for choosing your crust.The cost would be ksh 100/=");
   });
   var checkedTopping = $("form.toppings").change(function () {
     var checked = $("input:checked").val();
-    alert("Thanks for choosing your topping.The cost would be ksh 100/= ");
+    Swal.fire("Thanks for choosing your topping.The cost would be ksh 100/= ");
   });
   var number = $("input#quantity").change(function () {
     var quantity = $("input#quantity").val();
   });
   $("#submit").click(function (event) {
-        alert("Your order has been placed")
-        $(".whatorder").toggle();
-    
-
-    
+    Swal.fire("Your order has been placed");
+    $(".whatorder").toggle();
   });
   var deliverOrder = $("form#deliver").change(function () {
     $("input:checked").val();
     if ($("input:checked").val() === "yes") {
       prompt("Enter the adress you want your order to be delivered to");
-      alert("Your delivering charges will be Sh 55/=");
+      Swal.fire("Your delivering charges will be Sh 55/=");
       confirm("Do you still want the delivery to be made?");
     }
   });
 
   var cost = $("#cost").click(function (event) {
-    alert(
+    Swal.fire(
       "Hey! Customer this is your total cost " +
         $("input#quantity").val() * 1000
     );
