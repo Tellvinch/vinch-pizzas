@@ -43,7 +43,7 @@ $(document).ready(function () {
   $("button#cost").click(function (event) {
     var total =
       "Hello Customer! this is your total cost " +
-      $("input#quantity").val() * 1000;
+      $("input#quantity").val() * 805;
     Swal.fire(total);
   });
   $("form#deliver ").change(function () {
